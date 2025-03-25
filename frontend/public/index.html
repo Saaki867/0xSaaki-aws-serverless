@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Serverless AWS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Application Serverless AWS</h1>
+    
+    <div class="container">
+        <h2>Ajouter une nouvelle entrée</h2>
+        <form id="addDataForm">
+            <div>
+                <label for="dataTitle">Titre:</label>
+                <input type="text" id="dataTitle" required>
+            </div>
+            <div>
+                <label for="dataContent">Contenu:</label>
+                <textarea id="dataContent" rows="4" required></textarea>
+            </div>
+            <button type="submit">Ajouter</button>
+        </form>
+    </div>
+    
+    <div class="container">
+        <h2>Données existantes</h2>
+        <button id="refreshData">Rafraîchir les données</button>
+        <div id="dataList">
+            Chargement des données...
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
