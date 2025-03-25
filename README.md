@@ -50,6 +50,9 @@ The application follows a serverless architecture pattern:
         ├── postData.js # Function to create data
         └── package.json # Dependencies
 ```
+## Screenshots
+
+![Application Screenshot](docs/images/screenshot.png)
 
 ## Deployment Instructions
 
